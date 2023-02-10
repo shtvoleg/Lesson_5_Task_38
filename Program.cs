@@ -21,7 +21,7 @@ else
     for (int i = 1; i < array.Length; i++)                        //  обход массива
         {
             if (array[i] < minEl) minEl = array[i];               //  элемент массива < минимума
-            if (array[i] > maxEl) maxEl = array[i];               //  элемент массива < минимума
+            if (array[i] > maxEl) maxEl = array[i];               //  элемент массива > максимума
         }    
     Console.WriteLine($"Максимум: {maxEl}. Минимум: {minEl}. Разность между ними: {maxEl-minEl}.");
     }
