@@ -17,11 +17,11 @@ else
     float[] array = new float[num];                               //  объявление массива
     RandArray(array,0,100);                                       //  наполнение массива
     Console.WriteLine(String.Join(" ",array));                    //  вывод массива
-    float maxEl = array[0], minEl = array[0];                     //  максимум и минимум
+    float minEl = array[0], maxEl = array[0];                     //  минимум и максимум
     for (int i = 1; i < array.Length; i++)                        //  обход массива
         {
-            if (array[i] < minEl) minEl = array[i];               //  элемента массива < минимума
-            if (array[i] > maxEl) maxEl = array[i];               //  элемента массива < минимума
+            if (array[i] < minEl) minEl = array[i];               //  элемент массива < минимума
+            if (array[i] > maxEl) maxEl = array[i];               //  элемент массива < минимума
         }    
     Console.WriteLine($"Максимум: {maxEl}. Минимум: {minEl}. Разность между ними: {maxEl-minEl}.");
     }
